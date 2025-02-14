@@ -4,11 +4,11 @@ WORKDIR /app
 COPY package*.json ./
 EXPOSE 3000
 
-FROM ghcr.io/sigstore/cosign/cosign:v2.4.1 AS cosign-bin
+# FROM ghcr.io/sigstore/cosign/cosign:v2.4.1 AS cosign-bin
 # Source: https://github.com/chainguard-images/static
-FROM cgr.dev/chainguard/static:latest
-COPY --from=cosign-bin /ko-app/cosign /usr/local/bin/cosign
-ENTRYPOINT [ "cosign" ]
+# FROM cgr.dev/chainguard/static:latest
+# COPY --from=cosign-bin /ko-app/cosign /usr/local/bin/cosign
+# ENTRYPOINT [ "cosign" ]
 
 FROM base AS builder
 WORKDIR /app
