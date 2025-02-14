@@ -92,7 +92,7 @@ jobs:
           for tag in ${TAGS}; do
             images+="${tag}@${DIGEST} "
           done
-          cosign sign --yes --key ${COSIGN_KEY} ${images}
+          cosign sign --yes --key cosign.key="${COSIGN_KEY}" ${images}
         env:
           # https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-an-intermediate-environment-variable
           TAGS: ${{ steps.meta.outputs.tags }}
