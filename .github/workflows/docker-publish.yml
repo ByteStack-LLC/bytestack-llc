@@ -96,4 +96,4 @@ jobs:
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
         #run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
-        run: cosign sign --key env://COSIGN_KEY gchr.io/avisi-cloud/${{env.IMAGE_NAME}}:${{env.REGISTRY}}
+        run: cosign sign $IMAGE
