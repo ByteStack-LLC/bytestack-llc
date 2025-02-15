@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Popover
       className={
-        "container mx-auto flex items-center border-b-2 px-6 py-2 h-16"
+        "container mx-auto flex items-center border-b-2 px-6 py-2 h-24"
       }
     >
       <HeaderLogo />
