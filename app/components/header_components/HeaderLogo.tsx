@@ -11,7 +11,7 @@ const HeaderLogo = () => {
         width={40}
         height={20}
       />
-      <Link href="home">
+      <Link href="/">
         <h1 className="font-bold" style={{ fontSize: "1.6rem" }}>
           ByteStack
         </h1>
