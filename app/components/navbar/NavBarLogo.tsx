@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HeaderLogo = () => {
+const NavBarLogo = () => {
   return (
     <Link href="/" className="transition duration-300 hover:scale-110">
       <Image
@@ -15,4 +15,4 @@ const HeaderLogo = () => {
   );
 };
 
-export default HeaderLogo;
+export default NavBarLogo;
