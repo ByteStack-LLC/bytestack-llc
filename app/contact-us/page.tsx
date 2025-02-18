@@ -31,11 +31,11 @@ const ContactUs = () => {
           <h1 className="text-lg font-semibold">Contact Us</h1>
           {comments.map((comment) => {
             return (
-              <div key={comment._id}>
-                <p>{comment.name}</p>
-                <p>{comment.email}</p>
-                <p>{comment.text}</p>
-                <p>{comment.date}</p>
+              <div key={comment["_id"]}>
+                <p>{comment["name"]}</p>
+                <p>{comment["email"]}</p>
+                <p>{comment["text"]}</p>
+                <p>{comment["date"]}</p>
               </div>
             );
           })}
