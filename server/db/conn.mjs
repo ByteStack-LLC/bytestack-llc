@@ -7,5 +7,5 @@ try {
 } catch (e) {
   console.error(e);
 }
-let db = conn.db("sample_mflix");
+let db = conn.db("contact_requests");
 export default db;

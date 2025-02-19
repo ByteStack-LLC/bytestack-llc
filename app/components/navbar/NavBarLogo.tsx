@@ -5,7 +5,7 @@ const NavBarLogo = () => {
   return (
     <Link href="/" className="transition duration-300 hover:scale-110">
       <Image
-        className="dark:invert"
+        className="hover:invert"
         src="/file.svg"
         alt="temporary logo"
         width={30}
