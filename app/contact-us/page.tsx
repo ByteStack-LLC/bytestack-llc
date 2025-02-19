@@ -1,6 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import NavBar from "../components/navbar/NavBar";
+
+export default function Home() {
+  return (
+    <div className="absolute top-0 z-[-2] h-screen w-screen bg-white dark:bg-gray-700 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+      <main className="flex flex-col items-center px-4 md:px-8 lg:px-16">
+        <NavBar />
+      </main>
+    </div>
+  );
+}
+
+/*import { useState, useEffect } from "react";
 import { Form, Input, Button } from "@heroui/react";
 import { Textarea } from "@heroui/input";
 //import { Card, CardBody, CardHeader } from "@heroui/card";
@@ -36,7 +48,7 @@ const ContactUs = () => {
               <p>{request["description"]}</p>
             </div>
           );
-        })*/}
+        })}
       <Form
         className="max-w-full py-4 px-2 w-full justify-center items-center space-y-4"
         validationBehavior="native"
@@ -104,3 +116,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+*/

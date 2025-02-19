@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const NavBarLogo = () => {
   return (
-    <Link href="/" className="transition duration-300 hover:scale-110">
+    <Link
+      href="/"
+      className="opacity-90 text-3x1 transition-all  duration-300 hover:scale-110 hover:opacity-100"
+    >
       <Image
         className="hover:invert"
         src="/file.svg"
