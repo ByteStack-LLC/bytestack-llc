@@ -57,14 +57,14 @@ const ContactUsForm = () => {
         />
         <div className="flex gap-4">
           <Button
-            className="w-full bg-blue-600 rounded-lg"
+            className="w-full bg-blue-600 rounded-lg dark:text-white"
             color="primary"
             type="submit"
           >
             Submit
           </Button>
           <Button
-            className="bg-gray-500 rounded-lg"
+            className="bg-gray-500 rounded-lg text-white dark:text-white"
             type="reset"
             variant="bordered"
           >

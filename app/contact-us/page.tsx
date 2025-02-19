@@ -1,12 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import ContactUsForm from "../components/ui/ContactUsForm";
-import { Card, CardBody, CardHeader } from "@heroui/card";
-import { Divider } from "@heroui/react";
+import { Form, Input, Button } from "@heroui/react";
+import { Textarea } from "@heroui/input";
+//import { Card, CardBody, CardHeader } from "@heroui/card";
+//import { Divider } from "@heroui/react";
 
 const ContactUs = () => {
   const [requests, setRequests] = useState([]);
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(null);
+
+  const onSubmit = (e) => {
+    e.prevenDefault();
+  };
 
   useEffect(() => {
     const loadComments = async () => {
@@ -21,8 +28,7 @@ const ContactUs = () => {
 
   return (
     <div className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
-      <div>
-        {/*requests.map((request) => {
+      {/*requests.map((request) => {
           return (
             <div key={request["_id"]}>
               <p>{request["name"]}</p>
@@ -31,18 +37,68 @@ const ContactUs = () => {
             </div>
           );
         })*/}
-        <Card className="dark:bg-white rounded-lg shadow-lg shadow-black dark:shadow-black dark:shadow-lg">
-          <CardHeader className="justify-center">
-            <h1 className="text-lg font-semibold flex flex-col text-gray-800 dark:text-gray-800">
-              Contact Us
-            </h1>
-          </CardHeader>
-          <Divider className="dark:bg-white" />
-          <CardBody className="py-2">
-            <ContactUsForm />
-          </CardBody>
-        </Card>
-      </div>
+      <Form
+        className="max-w-full py-4 px-2 w-full justify-center items-center space-y-4"
+        validationBehavior="native"
+        validationErrors={errors}
+        onSubmit={onSubmit}
+        onReset={() => setSubmitted(null)}
+      >
+        <div className="flex flex-col gap-4 max-w-md">
+          <Input
+            isRequired
+            errorMessage={({ validationDetails }) => {
+              if (validationDetails.valueMissing) {
+                return "Please enter your name";
+              }
+            }}
+            label="Name"
+            labelPlacement="outside"
+            name="name"
+            placeholder="Enter your name"
+          />
+
+          <Input
+            isRequired
+            errorMessage={({ validationDetails }) => {
+              if (validationDetails.valueMissing) {
+                return "Please enter your email";
+              }
+              if (validationDetails.typeMismatch) {
+                return "Please enter a valid email";
+              }
+            }}
+            label="Email"
+            labelPlacement="outside"
+            name="email"
+            placeholder="Enter your email"
+            type="email"
+          />
+
+          <Textarea
+            isRequired
+            label="Description"
+            placeholder="Enter your request"
+            labelPlacement="outside"
+          />
+          <div className="flex gap-4">
+            <Button
+              className="w-full bg-blue-600 rounded-lg dark:text-white"
+              color="primary"
+              type="submit"
+            >
+              Submit
+            </Button>
+            <Button
+              className="bg-gray-500 rounded-lg text-white dark:text-white"
+              type="reset"
+              variant="bordered"
+            >
+              Reset
+            </Button>
+          </div>
+        </div>
+      </Form>
     </div>
   );
 };
