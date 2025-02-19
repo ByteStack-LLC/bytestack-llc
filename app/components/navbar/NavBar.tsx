@@ -4,7 +4,7 @@ import Link from "next/link";
 //import ThemeToggle from "../ui/theme-toggle";
 import { useState } from "react";
 import { BiX, BiMenu } from "react-icons/bi";
-import { FaInfoCircle, FaQuestionCircle } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
