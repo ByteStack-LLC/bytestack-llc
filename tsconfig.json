@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "allowJs": true,
-    "noImplicitAny": false,
+    //"noImplicitAny": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -24,6 +24,12 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/ByteStack.tsx"
+  ],
   "exclude": ["node_modules"]
 }
