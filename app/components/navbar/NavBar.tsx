@@ -14,10 +14,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-gray-300 bg-indigo-300/30 dark:border-b-gray-500 dark:bg-gray-800 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
+    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-500 bg-gray-800 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
       <Link
         href="/"
-        className=" opacity-80 text-2xl text-black dark:bg-gradient-to-r dark:from-[rgba(169,241,223)] dark:to-[rgba(255,187,187)] bg-clip-text text-transparent font-semibold transition-all duration-300 hover:opacity-100 hover:text-gray-800 hover:scale-110 hover:bg-clip-text hover:text-transparent"
+        className=" opacity-80 text-2xl bg-gradient-to-r from-[rgba(169,241,223)] to-[rgba(255,187,187)] bg-clip-text text-transparent font-semibold transition-all duration-300 hover:opacity-100 hover:text-gray-800 hover:scale-110 hover:bg-clip-text hover:text-transparent"
       >
         ByteStack
       </Link>
@@ -25,25 +25,25 @@ const NavBar = () => {
       <ul className="hidden md:flex gap-12">
         <Link
           href="#home"
-          className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+          className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
         >
           <li>Home</li>
         </Link>
         <Link
           href="#tech"
-          className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+          className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
         >
           <li>Tech</li>
         </Link>
         <Link
           href="#services"
-          className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+          className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
         >
           <li>Services</li>
         </Link>
         <Link
           href="#contact"
-          className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+          className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
         >
           <li>Contact</li>
         </Link>
@@ -62,44 +62,44 @@ const NavBar = () => {
 
       {isOpen ? (
         <BiX
-          className="block md:hidden cursor-pointer text-black dark:text-white text-4xl"
+          className="block md:hidden cursor-pointer text-white text-4xl"
           onClick={menuOpen}
         />
       ) : (
         <BiMenu
-          className="block md:hidden cursor-pointer text-black dark:text-white text-4xl"
+          className="block md:hidden cursor-pointer text-white text-4xl"
           onClick={menuOpen}
         />
       )}
 
       {isOpen && (
         <div
-          className={`fixed right-0 top-[84px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-300 bg-indigo-300/30 dark:border-gray-500 dark:bg-gray-700 p-12 ${
+          className={`fixed right-0 top-[84px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-500 bg-gray-700 p-12 ${
             isOpen ? "block" : "hidden"
           }`}
         >
           <ul className="flex flex-col gap-8">
             <Link
               href="#home"
-              className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+              className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
             >
               <li>Home</li>
             </Link>
             <Link
               href="#tech"
-              className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+              className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
             >
               <li>Tech</li>
             </Link>
             <Link
               href="#services"
-              className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+              className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
             >
               <li>Services</li>
             </Link>
             <Link
               href="#contact"
-              className="cursor-pointer text-black dark:text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
+              className="cursor-pointer text-white opacity-80 font-semibold transition-all duration-300 hover:opacity-100 hover:scale-110"
             >
               <li>Contact</li>
             </Link>
