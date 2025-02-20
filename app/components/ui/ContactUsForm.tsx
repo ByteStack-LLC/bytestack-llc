@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Form, Input, Button } from "@heroui/react";
 import { Textarea } from "@heroui/input";
 
@@ -6,8 +6,10 @@ const ContactUsForm = () => {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(null);
 
-  const onSubmit = (e) => {
-    e.prevenDefault();
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setErrors([]);
   };
 
   return (
@@ -19,6 +21,7 @@ const ContactUsForm = () => {
       onReset={() => setSubmitted(null)}
     >
       <div className="flex flex-col gap-4 max-w-md">
+        <p>{submitted}</p>
         <Input
           isRequired
           errorMessage={({ validationDetails }) => {
