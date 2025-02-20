@@ -35,4 +35,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/blob/main/.github/workflows/codeql.yml/badge.svg)
+![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/docs/actions/workflows/codeql.yml/badge.svg)
