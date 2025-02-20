@@ -1,10 +1,21 @@
+import NavBar from "./components/navbar/NavBar";
+import ByteStack from "./components/ByteStack";
+import Tech from "./components/Tech";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white dark:bg-black text-black dark:text-white transition-all duration-300">
-      <div className="space-y-10 max-w-3x1 text-center">
-        <h1 className="text-5xl font-semibold">Landing Page</h1>
-        <p className="text-gray-400 ">This is the landing page</p>
-      </div>
-    </div>
+    <>
+      <div className="fixed -z-10 min-h-screen w-full [background:radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+
+      <main className="flex flex-col items-center px-4 md:px-8 lg:px-16">
+        <NavBar />
+        <ByteStack />
+        <Tech />
+        <Services />
+        <Contact />
+      </main>
+    </>
   );
 }
