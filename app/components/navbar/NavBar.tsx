@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-gray-300 bg-indigo-300/30 dark:border-b-gray-500 dark:bg-gray-700 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
+    <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-gray-300 bg-indigo-300/30 dark:border-b-gray-500 dark:bg-gray-800 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
       <Link
         href="/"
         className=" opacity-80 text-2xl text-black dark:bg-gradient-to-r dark:from-[rgba(169,241,223)] dark:to-[rgba(255,187,187)] bg-clip-text text-transparent font-semibold transition-all duration-300 hover:opacity-100 hover:text-gray-800 hover:scale-110 hover:bg-clip-text hover:text-transparent"
