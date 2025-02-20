@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import { Button } from "@/components/ui/button";
 import { FaMoon, FaSun } from "react-icons/fa";
@@ -22,3 +22,4 @@ const ThemeToggle = () => {
 };
 
 export default ThemeToggle;
+*/

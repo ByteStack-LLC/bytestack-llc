@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
-import Footer from "./components/footer/footer"
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -21,13 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${roboto.variable} antialiased`}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="dark">
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>
   );
 }
