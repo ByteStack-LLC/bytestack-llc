@@ -30,10 +30,10 @@ const ByteStack = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="flex max-w-[600px] flex-col items-center justify-center gap-3 text-center">
-            <h1 className="dark:bg-gradient-to-r dark:from-[rgba(169,241,223)] dark:to-[rgba(255,187,187)] bg-clip-text text-transparent text-5xl font-light md:text-7xl">
+            <h1 className="bg-gradient-to-r from-[rgba(169,241,223)] to-[rgba(255,187,187)] bg-clip-text text-transparent text-5xl font-light md:text-7xl">
               ByteStack
             </h1>
-            <h3 className="dark:bg-gradient-to-r dark:to-[rgba(169,241,223)] dark:from-[rgba(255,187,187)] bg-clip-text text-transparent text-2xl md:text-3x1">
+            <h3 className="bg-gradient-to-r to-[rgba(169,241,223)] from-[rgba(255,187,187)] bg-clip-text text-transparent text-2xl md:text-3x1">
               Full Stack Development || Data Engineering
             </h3>
             <p className="md:text-base text-pretty text-sm text-gray-300">
