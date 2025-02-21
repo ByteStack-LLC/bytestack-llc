@@ -1,7 +1,7 @@
 import NavBar from "./components/navbar/NavBar";
 import ByteStack from "./components/ByteStack";
 import Tech from "./components/Tech";
-import Services from "./components/Services";
+import Team from "./components/Team";
 import Contact from "./components/Contact";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <NavBar />
         <ByteStack />
         <Tech />
-        <Services />
+        <Team />
         <Contact />
       </main>
     </>

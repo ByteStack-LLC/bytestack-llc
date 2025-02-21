@@ -3,6 +3,7 @@
 import {
   BiLogoAngular,
   BiLogoDocker,
+  BiLogoJava,
   BiLogoJavascript,
   BiLogoMongodb,
   BiLogoNodejs,
@@ -21,7 +22,7 @@ const Tech = () => {
   return (
     <div
       id="tech"
-      className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-12 md:gap-24"
+      className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-10 md:gap-16"
     >
       <motion.h1
         variants={variants}
@@ -96,6 +97,14 @@ const Tech = () => {
           transition={{ duration: 0.5 }}
         >
           <BiLogoMongodb className="cursor-pointer text-[80px] text-[rgba(77,179,61)] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
+        </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <BiLogoJava className="cursor-pointer text-[80px] text-[rgba(248,152,32)] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" />
         </motion.div>
       </div>
     </div>

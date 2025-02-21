@@ -1,3 +1,8 @@
+![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/actions/workflows/codeql.yml/badge.svg?event=push)
+![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/actions/workflows/docker-publish.yml/badge.svg?event=push)
+![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/actions/workflows/sonarcloud.yml/badge.svg?event=push)
+![example workflow](https://github.com/ByteStack-LLC/bytestack-llc/actions/workflows/codeql.yml/badge.svg?event=push)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
