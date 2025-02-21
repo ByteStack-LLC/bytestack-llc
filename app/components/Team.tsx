@@ -2,8 +2,8 @@
 
 import { JSX } from "react";
 import { motion } from "motion/react";
-import fede from "../../public/fede.png";
-import fares from "../../public/fares.png";
+import fede from "../../public/cropped-fede.png";
+import fares from "../../public/cropped-fares.png";
 import Image, { StaticImageData } from "next/image";
 
 const team = [
@@ -68,7 +68,7 @@ const TeamCard: React.FC<{
         <Image
           src={image}
           alt=""
-          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 sm:w-[100px] md:w-[150px]"
+          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[164px]"
         />
 
         <div className="flex flex-col gap-5">
