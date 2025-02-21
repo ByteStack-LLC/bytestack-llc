@@ -68,7 +68,7 @@ const TeamCard: React.FC<{
         <Image
           src={image}
           alt=""
-          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 sm:w-[80px] md:w-[164px]"
+          className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[164px]"
         />
 
         <div className="flex flex-col gap-5">
