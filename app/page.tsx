@@ -16,6 +16,7 @@ export default function Home() {
         <Tech />
         <Team />
         <Contact />
+        <Footer />
       </main>
     </>
   );
