@@ -3,6 +3,7 @@ import ByteStack from "./components/ByteStack";
 import Tech from "./components/Tech";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Tech />
         <Team />
         <Contact />
+        <Footer />
       </main>
     </>
   );

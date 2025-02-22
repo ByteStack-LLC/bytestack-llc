@@ -34,7 +34,7 @@ const ByteStack = () => {
               ByteStack
             </h1>
             <h3 className="bg-gradient-to-r to-[rgba(169,241,223)] from-[rgba(255,187,187)] bg-clip-text text-transparent text-2xl md:text-3x1">
-              Full Stack Development || Data Engineering
+              Full-Stack Development || Data Engineering
             </h3>
             <p className="md:text-base text-pretty text-sm text-gray-300">
               Providing modern solutions to modern problems

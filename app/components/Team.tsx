@@ -9,9 +9,9 @@ import Image, { StaticImageData } from "next/image";
 const team = [
   {
     image: fede,
-    title: "Software Engineer || Full Stack Developer",
+    title: "Software Engineer || Full-Stack Developer",
     description:
-      "Federico is a professional Developer with 2-3 years of of Software Engineering experience, 1-2 years of Full Stack Development and Automation Engineering experience, and 1 year of Data Engineering experience.",
+      "Federico is a professional Developer with 2-3 years of of Software Engineering experience, 1-2 years of Full-Stack Development and Automation Engineering experience, and 1 year of Data Engineering experience.",
     technologies: [
       "JavaScript",
       "Python",
@@ -29,14 +29,13 @@ const team = [
 
   {
     image: fares,
-    title: "Tech Support Lead || Full Stack Developer",
+    title: "Tech Support Lead || Full-Stack Developer",
     description:
-      "Fares is a professional Developer with 2-3 years of of Software Engineering experience, 1-2 years of Full Stack Development and Automation Engineering experience, and 1 year of Data Engineering experience.",
+      "Fares is a professional Tech Support Lead with 3 years of IT experience, 1 year of Full-Stack Development and Automation Engineering experience, and 2 years of experience with the Microsoft Power Platform.",
     technologies: [
       "JavaScript",
       "Microsoft Power Platform",
       "React",
-      "Next.js",
       "Cypress",
     ],
   },
